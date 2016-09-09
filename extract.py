@@ -164,7 +164,7 @@ scaledtime=(newtime-newtime[0])/scale
 osc=opt.curve_fit(polynomial_fit,scaledtime,fluxcorrected)[0]
 bn=polynomial_fit(scaledtime,osc[0],osc[1],osc[2],osc[3],osc[4],osc[5],osc[6],osc[7],osc[8],osc[9],osc[10],osc[11],osc[12],osc[13],osc[14],osc[15],osc[16],osc[17])
 
-#The following commented region can be decommmented if one observes that the PLD correction process trades off between the stelar variation and the instrumental variation.
+#The following commented region can be decommmented if one observes that the PLD correction process trades off between the stellar variation and the instrumental variation.
 #It just iterates on a first order guess and reimplements PLD. In order to better model the instrumental response, it is recommended that one iterate it quite some times.
  
 ##normastro=(bn+numpy.average(newflux))/numpy.average(bn+newflux)
