@@ -74,7 +74,7 @@ def chisquared(data,model):
 
 # The PLD function is the one that models the instrumental response in warm Spitzer data. The inputs to the function are:
 # array = Raw flux
-# matrix = Matrix that stores individual pixel flux. For thhis particular code we use 9 pixels. 
+# matrix = Matrix that stores individual pixel flux. For this particular code we use 9 pixels. 
 
 def PLD(array,matrix):
     l=numpy.transpose(array)
